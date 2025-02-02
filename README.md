@@ -48,4 +48,7 @@ navegador.
   ```
   Agora você pode acessar o network do seu navegador.
 
+Deploy na vercel:
+ [`Real time currency`](https://b3-digitas-gbx7.vercel.app/)
+
 # Obrigada pela oportunidade!
