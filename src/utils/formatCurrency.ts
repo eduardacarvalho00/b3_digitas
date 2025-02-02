@@ -3,6 +3,6 @@ export const formatCurrency = (value: number): string => {
     style: "currency",
     currency: "BRL",
     minimumFractionDigits: 2,
-    maximumFractionDigits: 2,
+    maximumFractionDigits: 10,
   }).format(value);
 };
