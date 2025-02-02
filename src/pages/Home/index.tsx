@@ -1,6 +1,6 @@
-import Header from "../components/Header";
-import { Table } from "../components/Table";
-import { useCurrency } from "../queries/useCurrency";
+import Header from "../../components/Header";
+import { Table } from "../../components/Table";
+import { useCurrency } from "../../queries/useCurrency";
 
 export const Home = () => {
   const { data, isFetching } = useCurrency();
@@ -14,7 +14,7 @@ export const Home = () => {
               <p className="font-semibold text-gray-500">Loading...</p>
             </div>
           )}
-          {data && <Table data={data} />}
+          {data && <Table data={data} data-testid="table" />}
         </div>
       </main>
       <footer className="py-4 text-center text-gray-500">
