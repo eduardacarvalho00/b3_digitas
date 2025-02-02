@@ -1,50 +1,51 @@
-# React + TypeScript + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## 💡 Tecnologias
 
-Currently, two official plugins are available:
+**Tecnologias utilizadas no projeto:**
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+<img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original.svg" width="60">&nbsp;
+&nbsp;
+<img src="https://cdn.iconscout.com/icon/free/png-512/typescript-1174965.png" alt="imagem" width="60">&nbsp;
+&nbsp;
+<img src="https://github.com/eduardacarvalho00/test-gobots/assets/99972177/9b055446-699d-4171-b75a-34e5c6ed87b2" alt="imagem" width="63">
+&nbsp;
 
-## Expanding the ESLint configuration
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+**Bibliotecas utilizadas no projeto:**
+- Lucide react
+- Eslint
+- Vitest
+- React Router V7
+- React Query (Tanstack)
 
-- Configure the top-level `parserOptions` property like this:
+**API:**
+- [`Fixer.io`](https://fixer.io/documentation)
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+## 🚀 Como executar
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+- Clone o repositório
+- Instale as dependências com `pnpm i`
+- Adicione o arquivo .env com o seguinte conteúdo:
+  ```
+  VITE_APP_ACCESS_KEY_API=ed757def74a594d7352c9d979ebd8a0b
+  ```
+- Inicie o servidor com `pnpm dev`
+- Para executar testes use `pnpm vitest run`
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+Agora você pode acessar [`localhost:5173`](http://localhost:5173) do seu
+navegador.
+
+### Dockerfile
+
+- Tendo o docker instalado na sua maquina execute esses comandos:
+  
+  ```
+  docker build -t currency
+  ```
+  ```
+  docker run -p 3000:3000 currency
+  ```
+  Agora você pode acessar o network do seu navegador.
+
+# Obrigada pela oportunidade!
